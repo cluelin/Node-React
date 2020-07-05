@@ -34,7 +34,12 @@ mongoose.connect(config.mongoURI, {
 
 app.get('/', (req, res) => res.send('Hello World! '))
 
+app.get('/api/hello', (req, res)=>{
+    
+    //원래는 여기서 req받은거 처리해준다. 
 
+    res.send("안녕하세요. ");
+})
 
 
 app.post('/api/user/register', (req, res) => {
