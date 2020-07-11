@@ -23,9 +23,7 @@ function App() {
           
           <Route exact path="/landing" component={LandingPage}/>
           
-          <Route path="/login">
-            <LoginPage />
-          </Route>
+          <Route exact path="/login" component={LoginPage}/>
           
           <Route path="register">
             <RegisterPage />
