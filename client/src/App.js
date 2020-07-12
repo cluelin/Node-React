@@ -21,11 +21,11 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           
-          <Route exact path="/landing" component={LandingPage}/>
+          <Route exact path="/" component={LandingPage}/>
           
           <Route exact path="/login" component={LoginPage}/>
           
-          <Route path="register">
+          <Route path="/register">
             <RegisterPage />
           </Route>
         </Switch>
